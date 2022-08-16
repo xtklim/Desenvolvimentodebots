@@ -13,7 +13,7 @@ def teste(msg):
 		h, m, s = map(int, msgs.split(':'))
 		msdecimal = ((h * 60 + m) * 60 + s) * 1000
 		mshex = hex(msdecimal)
-		bot.send_message(msg.chat.id, f'Resultado:\n\nms decimal: <b>{msdecimal}</b>\n\nms hex: <b>{mshex}</b>\n\nms Long: <b>{str(mshex)}L</b>', parse_mode='html')
+		bot.send_message(msg.chat.id, f'Resultado:\n\nms decimal: <tt>{msdecimal}</tt>\n\nms hex: <b>{mshex}</b>\n\nms Long: <b>{str(mshex)}L</b>', parse_mode='html')
 	except:
 		bot.send_message(msg.chat.id, 'Nao seja um tolo digite o seu tempo corretamente kk\nExemplo: /milis 23:23:23')
 
